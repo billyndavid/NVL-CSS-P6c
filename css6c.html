@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="title" content="CSS">
+    <meta name="description" content="pruebas css"> 
+	<style type="text/css">
+	 h2+ol {
+	 	font: 15px arial, sans-serif;
+	 	color: gray;
+	 }
+	 h1,h2,h3 {
+	 	color: #696969;
+	 	font-family: arial;
+	 }
+	 div.receta h2+ul {
+	 	font: 15px arial;
+	 	font-style: italic;
+	 	color: red;
+	 }
+	 img {
+	 	width: 380px;
+	 	height: 200px;
+	 	border: 2px solid red;
+	 }
+	 form {
+	 	width: 500px;
+	 	padding: 10px;
+	 	border: 1px solid gray;
+	 	background-color: #a9a9a9;
+	 }
+	 input[type=text] {
+	 	display: block;
+	 	width: 300px;
+	 }
+	 textarea {
+	 	width: 100%;
+	 	height: 200px;
+	 	color: #f9f9f9;
+	 }
+	 input[type=submit] {
+	 	width: 150px;
+	 	color: red;
+	 	margin: auto;
+	 	display: block;
+	 }
+	</style>
+</head>
+<body>
+ 	<header><h1>css practica de selectores 6c</h1></header>    
+    <nav></nav>
+    <section> 
+    	<div class="receta">
+    		<h1>Patatas fritas</h1>
+			<figure>
+				<img src="https://www.ecestaticos.com/imagestatic/clipping/354/165/3541658c01b4c8ab08bc0358648cd161/como-hacer-las-patatas-fritas-perfectas.jpg?mtime=1430831796" alt="Patatas fritas con ajos.">
+			</figure>
+		    <h2>Ingredientes:</h2>
+		    <ul>
+			      <li>3 ó 4 patatas (300g.)</li>
+			      <li>4 dientes de ajo</li>
+			      <li>Aceite de oliva</li>
+			      <li>Sal</li>
+		    </ul>
+		    <h2>Elaboración:</h2>
+		    <ol>
+			      <li>Calentar aceite en una sartén.</li>
+			      <li>Añadir las patatas cortadas, la sal y los ajos.</li>
+			      <li>Freír al gusto.</li>
+			      <li>Servir en plato.</li>
+		    </ol>
+    	</div>
+    	<div>
+    		<form action="form.php" method="post">
+    			<input type="text" id="nombre" placeholder="nombre" required>
+    			<input type="text" id="email" placeholder="email" required>
+    			<textarea placeholder="escribeme un comentario"></textarea>
+    			<input type="submit" value="enviar" id="envio">
+    		</form>
+    	</div>
+   	</section>
+    <aside>
+	    <div>
+	    	<h3>link relacionados</h3>
+	    		<ul>
+	    			<li><a href="https://www.recetasderechupete.com">otras recetas</a></li>
+	    		</ul>
+	    	</div>
+	</aside>
+	<footer></footer>
+</body>
+</html>
